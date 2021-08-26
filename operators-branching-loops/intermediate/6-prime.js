@@ -1,4 +1,4 @@
-
+let number = prompt("Enter a number:")
 function isPrime(n) {
 
     let flag = true;
@@ -20,4 +20,4 @@ function isPrime(n) {
 }
 
 
-isPrime()
+isPrime(number)
