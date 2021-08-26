@@ -20,4 +20,4 @@ function isPrime(n) {
 }
 
 
-isPrime(9)
+isPrime()
