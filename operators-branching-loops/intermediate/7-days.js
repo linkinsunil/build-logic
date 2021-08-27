@@ -11,9 +11,10 @@ let days = {
 function isWeekday(){
 
     let userInput = prompt("Enter a day - ")
-
-    if(userInput in days){
-        console.log(`${userInput} is a ${days[userInput]}`)
+let normalisedcase=userInput[0].toUpperCase().concat(userInput.substr(1).toLowerCase());
+    if(days.hasOwnProperty(normalisedcase))
+    {
+        console.log(`${normalisedcase} is a ${days[normalisedcase]}`)
     } else {
         console.log(`Input is not recognized. Please use proper format.`)
     }
